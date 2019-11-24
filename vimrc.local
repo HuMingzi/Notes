@@ -1,0 +1,118 @@
+"Start:
+
+    "runtime! debian.vim
+
+"Source
+    "if filereadable("/etc/vim/gvimrc.local")
+        "source /etc/vim/gvimrc.local
+    "endif
+
+"File
+    filetype plugin on
+    filetype indent on
+    set fileencodings=utf-8,utf-16,gbk,big5,gb18030,ucs-bom,latin1
+    ":e ++enc=encoding file
+
+"Indent&Tab
+    set autoindent
+    set smartindent
+    set wrap
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    set expandtab
+    set smarttab
+    set list
+    set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+"Line
+    set number
+    set relativenumber
+    set linebreak
+    "set cursorline
+    "set scrolloff=9     "default 5
+
+"Completion
+    set wildmenu
+    set wildmode=list:full
+    set completeopt=longest,menuone
+
+"Search
+    set hlsearch
+    set incsearch
+    set smartcase
+
+"Regular Expressions
+    set magic
+
+"Match
+    set showmatch
+
+"Read&Save
+    set autoread
+    set autowrite
+    set confirm
+    set noswapfile
+    set nobackup        "default
+    set writebackup     "default
+    set autochdir
+    "set undofile
+
+"Status Line
+    set showcmd
+    set showmode
+    "set cmdheight=2
+    set laststatus=1    "default
+    set statusline=%<\[%n\]\ \[%t\]%h%m%r%w\ \ %y\ \ \[%{''.(&fenc!=''?&fenc:&enc).''}\]%=\[%b\ 0x%B\]\ \ \[%l,%c%V\ %P\]
+
+"Fold
+    set foldmethod=syntax
+    set nofoldenable
+    "zo/zO      Open one/all folds under the cursor
+    "zc/zC      Close one/all folds under the cursor
+    "za/zA      Close <--> Open one/recursively
+    "zv         View cursor line
+    "zx/zX      Undo manually opend and closed folds
+    "zm/zM      Fold more/all
+    "zr/zR      Reduce folding/all
+    "zn/zN      Fold none/normal
+    "[z/]z      Move to the start/end of the current open fold
+    "zj/zk      Move downwards/upwards to the start/end of the next/previous
+    "           fold
+
+"Buffer
+    set hidden      "hide buffers when not displayed
+
+"Map
+    "map <C-c> "+y
+    "map <C-v> "+p
+    "map <C-a> ggVG
+
+"Mouse
+    "set mouse=a
+
+"GUI
+    "set guioptions-=m guioptions-=T     "menu Toolsbar
+    "set guioptions+=c                   "Console dialog
+    "set guifont=Noto\ Sans\ Mono\ 15    "DejaVu\ Sans\ Mono\ 15
+    "set columns=80
+    "set lines=80
+    "colorscheme baycomb                 "vim-scripts --> colors-sampler-pack
+
+"YouCompleteMe
+    highlight PMenu ctermfg=0 ctermbg=15 guifg=black guibg=white
+    highlight PMenuSel ctermfg=15 ctermbg=0 guifg=white guibg=black
+    "Black-0 Maroon-1 Green-2 Olive-3 Navy-4 Purple-5 Teal-6 Silver-7
+    "Grey-8 Red-9 Lime-10 Yellow-11 Blue-12 Fuchsia-13 Aqua-14 White-15
+    "Depends on the Theme
+
+"Printer --- useless
+    "set printoptions=paper:A4,syntax:y,number:y,wrap:y
+    "set printencoding=utf-8
+    "set printfont=DejaVuSansMono,DroidSansFallbackFull
+    "set printmbcharset=ISO10646
+    "set printmbfont=r:WadaMin-Regular,b:WadaMin-Bold,c:yes
+    "still can't print chinese in debian testing en-HK
+    "USE :TOhtml + firefox print
+
+"End.

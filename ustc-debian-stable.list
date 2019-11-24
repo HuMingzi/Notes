@@ -1,0 +1,23 @@
+# USTC Debian-Stable
+
+deb https://mirrors.ustc.edu.cn/debian stable main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian stable main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian-security/ stable/updates main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian-security/ stable/updates main contrib non-free
+
+# use with /etc/apt/preferences
+# Package: *
+# Pin: release a=stable
+# Pin-Priority: 900
+# deb https://mirrors.ustc.edu.cn/debian unstable main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian unstable main contrib non-free
+
+# deb https://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
+
+# deb https://mirrors.ustc.edu.cn/debian stable-backports main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian stable-backports main contrib non-free
+
+# deb https://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free

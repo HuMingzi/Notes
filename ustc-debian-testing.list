@@ -1,0 +1,20 @@
+# USTC Debian-Testing
+
+deb https://mirrors.ustc.edu.cn/debian testing main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian testing main contrib non-free
+
+# use with /etc/apt/preferences
+# deb https://mirrors.ustc.edu.cn/debian unstable main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian unstable main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian testing-updates main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian testing-updates main contrib non-free
+
+# deb https://mirrors.ustc.edu.cn/debian testing-backports main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian testing-backports main contrib non-free
+
+# deb https://mirrors.ustc.edu.cn/debian testing-proposed-updates main contrib non-free
+# deb-src https://mirrors.ustc.edu.cn/debian testing-proposed-updates main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian-security/ testing-security/updates main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian-security/ testing-security/updates main contrib non-free
